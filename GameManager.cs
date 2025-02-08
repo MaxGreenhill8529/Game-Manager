@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float fadeOutTime = 1f;
 
     private static float originalTimeScale;
+    /// <summary>
+    /// Fades in the canvas group that was designated as the death screen in the editor
+    /// </summary>
     public void ShowDeathScreen()
     {
         if(deathScreen.alpha > 0)
